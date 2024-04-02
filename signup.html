@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Adventure Login</title>
+    <link rel="stylesheet" href="./login.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./at.jpg">
+            <h1>AISHWI TECHNOLOGIES</h1>
+        </header><br><br>
+        <main>
+            <form class="signup-form" id="a2" action="./signup.php" method="post">
+                <p id="p1" style="color:red;"></p>
+                <div class="input-container">
+                    <input type="text" placeholder="Username" required name="uname">
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="Email" required name="email">
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Password" required name="pass">
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </main>
+        <footer>
+            <p><font color="#1E90FF">EMPOWERING</font> TOMORROW, <font color="#1E90FF">INNOVATING</font> TODAY</p>
+        </footer>
+    </div>
+    <script>
+        if(sessionStorage.getItem("redirect")=="true"){
+            document.getElementById("p1").innerHTML="*User already exists";
+            sessionStorage.setItem("redirect",false);
+        }
+    </script>
+</body>
+</html>

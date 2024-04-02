@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+    /* font-weight: 300; */
+}
+header{
+    padding: 10px;
+    box-shadow: 0px 0.1px 10px rgb(118, 118, 118);
+}
+.logo{
+    width: 150px;
+    height: 120px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .b a{
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    font-size: larger;
+    margin: 40px;
+}
+nav .b a:hover{
+    color: blue;
+}
+nav .c{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
+}
+nav .login{
+    height: 50px;
+    padding: 0 15px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+nav .login a:hover{
+    color: blue;
+}
+nav .login a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+}
+nav .signup{
+    height: 50px;
+    padding: 0 15px;
+    border: 1.5px solid blue;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+nav .signup:hover{
+    background-color: blue;
+}
+nav .signup:hover a{
+    color: white;
+}
+nav .signup a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+}
+/*---*/
+.car{
+    height: 600px;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.793);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 250px;
+    row-gap: 10px;
+}
+.car h1{
+    color: blue;
+}
+.car button:hover{
+    background-color: blue;
+}
+.carousel{
+    height: 600px;
+    margin: 10px;
+    z-index: -1;
+    position: relative;
+}
+.carousel-inner, .carousel-item{
+    height: 600px;
+}
+.carousel img{
+    height: 100%;
+}
+.content{
+    margin: 40px 20px;
+    text-align: center;
+}
+.con{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.content .content-inner{
+    margin: 5px;
+    height: 260px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px black;
+}
+.content-inner h3{
+    background-color: rgb(90, 90, 255);
+    color: white;
+}
+.content .know{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(254, 100, 17, 0.907);
+    color: white;
+    padding: 0 10px;
+    height: 40px;
+}
+.content .know:hover{
+    background-color: blue;
+}
+.content h1{
+    font-weight: bold;
+}
+/*---*/
+footer{
+    /* background-color: rgb(236, 248, 250); */
+    background-color: rgba(193, 206, 255, 0.512);
+    margin-top: 30px;
+    padding: 40px;
+}
+.footer-columns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
+.footer-column input{
+    height: 30px;
+    width: 200px;
+    margin-left: 0%;
+}
+.footer-heading{
+    font-size: 26px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer-column ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li{
+    margin-bottom: 7px;
+}
+.footer-social-icons{
+    margin-top: 20px;
+}
+.footer-social-icons a{
+    margin-right: 10px;
+}
+.footer-social-icons img{
+    width: 30px;
+    height: 30px;
+}
+.footer-column form img{
+    width: 25px;
+    height: 25px;
+}
